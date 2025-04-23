@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Occupational Hygiene and Safety Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      max-width: 800px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    .feedback {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    button {
+      margin: 5px 10px 5px 0;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+  <script>
+    function checkAnswer(correct, selected, el) {
+      el.textContent = selected === correct ? 'Correct!' : 'Wrong!';
+      el.style.color = selected === correct ? 'green' : 'red';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Occupational Hygiene and Safety Quiz</h1>
+    <div class='question'><p>1. Strategy considered first line of defense for controlling occupational health hazards:</p><div><button onclick="checkAnswer('Engineering control', 'Personal protective equipment', document.getElementById('f1'))">Personal protective equipment</button><button onclick="checkAnswer('Engineering control', 'Engineering control', document.getElementById('f1'))">Engineering control</button></div><div class='feedback' id='f1'></div></div>
+    <div class='question'><p>2. Labour law is the:</p><div><button onclick="checkAnswer('All of the above', 'Administrative control', document.getElementById('f2'))">Administrative control</button><button onclick="checkAnswer('All of the above', 'All of the above', document.getElementById('f2'))">All of the above</button></div><div class='feedback' id='f2'></div></div>
+    <div class='question'><p>3. ILO (International Labor Organization) was founded in:</p><div><button onclick="checkAnswer('1919 AD', '1946 AD', document.getElementById('f3'))">1946 AD</button><button onclick="checkAnswer('1919 AD', '1919 AD', document.getElementById('f3'))">1919 AD</button></div><div class='feedback' id='f3'></div></div>
+    <div class='question'><p>4. According to Labour Act, no enterprise is allowed to employ below the age of:</p><div><button onclick="checkAnswer('16 years', '14 years', document.getElementById('f4'))">14 years</button><button onclick="checkAnswer('16 years', '16 years', document.getElementById('f4'))">16 years</button></div><div class='feedback' id='f4'></div></div>
+    <div class='question'><p>5. Which of the following is not a function of ILO?</p><div><button onclick="checkAnswer('Reduce disaster risks and disability', 'Reduce disaster risks and disability', document.getElementById('f5'))">Reduce disaster risks and disability</button><button onclick="checkAnswer('Reduce disaster risks and disability', 'Creation of international labor standards', document.getElementById('f5'))">Creation of international labor standards</button></div><div class='feedback' id='f5'></div></div>
+    <div class='question'><p>6. ILO ensures workers’ rights by coordination with:</p><div><button onclick="checkAnswer('Employer and employees', 'Employer and employees', document.getElementById('f6'))">Employer and employees</button><button onclick="checkAnswer('Employer and employees', 'Government and employers', document.getElementById('f6'))">Government and employers</button></div><div class='feedback' id='f6'></div></div>
+    <div class='question'><p>7. Industrial hygiene and safety is concerned with:</p><div><button onclick="checkAnswer('All of the above', 'All of the above', document.getElementById('f7'))">All of the above</button><button onclick="checkAnswer('All of the above', 'Identifying and analyzing the hazards of workplace', document.getElementById('f7'))">Identifying and analyzing the hazards of workplace</button></div><div class='feedback' id='f7'></div></div>
+    <div class='question'><p>8. Minimum wage by Nepal govt effective from 17 July 2019 is:</p><div><button onclick="checkAnswer('Rs. 13,450/month', 'Rs. 13,450/month', document.getElementById('f8'))">Rs. 13,450/month</button><button onclick="checkAnswer('Rs. 13,450/month', 'Rs. 9,700/month', document.getElementById('f8'))">Rs. 9,700/month</button></div><div class='feedback' id='f8'></div></div>
+    <div class='question'><p>9. According to Labour Act 2074, no employer shall require workers to work more than:</p><div><button onclick="checkAnswer('8 hours a day and 48 hours a week', '8 hours a day and 48 hours a week', document.getElementById('f9'))">8 hours a day and 48 hours a week</button><button onclick="checkAnswer('8 hours a day and 48 hours a week', '8 hours a day and 44 hours a week', document.getElementById('f9'))">8 hours a day and 44 hours a week</button></div><div class='feedback' id='f9'></div></div>
+    <div class='question'><p>10. The highest percentage of child labor is found in:</p><div><button onclick="checkAnswer('Agricultural sector', 'Agricultural sector', document.getElementById('f10'))">Agricultural sector</button><button onclick="checkAnswer('Agricultural sector', 'Domestic sector', document.getElementById('f10'))">Domestic sector</button></div><div class='feedback' id='f10'></div></div>
+    <div class='question'><p>11. Which of the following action cannot be taken by the management?</p><div><button onclick="checkAnswer('To give warning', 'To hire and fire without cause', document.getElementById('f11'))">To hire and fire without cause</button><button onclick="checkAnswer('To give warning', 'To give warning', document.getElementById('f11'))">To give warning</button></div><div class='feedback' id='f11'></div></div>
+    <div class='question'><p>12. Labour Act says employees are eligible for overtime at what multiple of ordinary wages?</p><div><button onclick="checkAnswer('2.0', '1.5', document.getElementById('f12'))">1.5</button><button onclick="checkAnswer('2.0', '2.0', document.getElementById('f12'))">2.0</button></div><div class='feedback' id='f12'></div></div>
+    <div class='question'><p>13. What is the purpose of ventilation in industries?</p><div><button onclick="checkAnswer('All of the above', 'All of the above', document.getElementById('f13'))">All of the above</button><button onclick="checkAnswer('All of the above', 'To provide thermal comfort', document.getElementById('f13'))">To provide thermal comfort</button></div><div class='feedback' id='f13'></div></div>
+  </div>
+</body>
+</html>
